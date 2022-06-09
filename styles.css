@@ -6,4 +6,33 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(187, 185, 185);
+    background-image: url("https://i.pinimg.com/originals/e3/51/c5/e351c5a041910b06b893c1d7eda6ba2e.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.container {
+    width: 800px;
+    max-width: 80%;
+    background-color: rgb(252, 251, 251);
+    border-radius:5px;
+    padding: 10px;
+    box-shadow: 0 0 10px;
+    
+}
+.button-grid {
+    display:grid;
+}
+.rebellogo img {
+    position: absolute;
+    left: 25px;
+    top: 200px;
+    width: 400px;
+}
+.empirelogo img {
+    position: absolute;
+    right: 25px;
+    top: 200px;
+    width: 400px;
 }
