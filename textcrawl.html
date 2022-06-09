@@ -42,14 +42,14 @@
   overflow: hidden;
 }
 
-.fade {
+ .fade {
   position: relative;
   width: 100%;
   min-height: 60vh;
   top: -25px;
   background-image: linear-gradient(0deg, transparent, black 75%);
   z-index: 1;
-}
+} 
 
 .star-wars {
   display: flex;
@@ -64,26 +64,26 @@
   line-height: 150%;
   perspective: 400px;
   text-align: justify;
-}
+} 
 
-.crawl {
+ .crawl {
   position: relative;
   top: 9999px;
   transform-origin: 50% 100%;
   animation: crawl 30s linear;
-}
+} 
 
-.crawl > .title {
+ .crawl > .title {
   font-size: 90%;
   text-align: center;
-}
+} 
 
-.crawl > .title h1 {
+ .crawl > .title h1 {
   margin: 0 0 100px;
   text-transform: uppercase;
-}
+} 
 
-@keyframes crawl {
+ @keyframes crawl {
   0% {
     top: 0;
     transform: rotateX(20deg)  translateZ(0);
@@ -91,7 +91,7 @@
   100% { 
     top: -6000px;
     transform: rotateX(25deg) translateZ(-2500px);
-  }
+  } 
 }
 .replacebutton {
     background-color: rgb(0, 0, 0);
@@ -115,4 +115,5 @@
 }
 </style>
 </section>
+// https://css-tricks.com/snippets/css/star-wars-crawl-text/
 </body>
