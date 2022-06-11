@@ -13,26 +13,37 @@ body {
     background-position: center center;
 }
 .container {
-    width: 800px;
+    width: 1000px;
     max-width: 80%;
     background-color: rgb(252, 251, 251);
     border-radius:5px;
     padding: 10px;
-    box-shadow: 0 0 10px;
+    box-shadow: 10 0 100px;
     
 }
 .button-grid {
     display:grid;
+    gap: 10px;
+    margin: 10px 0;
 }
+
 .rebellogo img {
     position: absolute;
-    left: 25px;
+    left: -15px;
     top: 200px;
-    width: 400px;
+    width: 500px;
 }
 .empirelogo img {
     position: absolute;
     right: 25px;
     top: 200px;
     width: 400px;
+}
+.button.correct {
+    background-color: rgb(3, 185, 3);
+    color: white;
+}
+.button.wrong {
+    background-color: red;
+    color: white;
 }
