@@ -1,11 +1,3 @@
-const startButton = document.getElementById('start-button')
-const questionContainerElement = document.getElementById('questions-container')
-const questionElement = document.getElementById('question')
-const answerButtonsElement = document.getElementById('answer-buttons')
-function startGame(){
-    console.log('GAME STARTED')
-    setNextQuestion()
-}
 
 const question = [
     {

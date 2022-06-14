@@ -14,17 +14,42 @@ body {
 }
 .container {
     width: 1000px;
+    height: 175px;
     max-width: 80%;
     background-color: rgb(252, 251, 251);
     border-radius:5px;
     padding: 10px;
     box-shadow: 10 0 100px;
+    background-color: #F4E23A;
     
+}
+.button {
+    background-color: #F4E23A;
+    color: black;
+
+}
+
+.button:active {
+  box-shadow: 0 1px black;
+  transform: translateY(3px);
+}
+
+.next-button{
+    background-color:#F4E23A;
+    width: 200px;
+    margin: 0;
+    position: absolute;
+    left: 45%;
+}
+.next-button:active{
+    box-shadow: 0 1px black;
+    transform: translateY(3px);
 }
 .button-grid {
     display:grid;
     gap: 10px;
     margin: 10px 0;
+    background-color: #F4E23A;
 }
 
 .rebellogo img {
@@ -39,11 +64,9 @@ body {
     top: 200px;
     width: 400px;
 }
-.button.correct {
-    background-color: rgb(3, 185, 3);
-    color: white;
-}
-.button.wrong {
-    background-color: red;
-    color: white;
+.starwarslogo img {
+    position: absolute;
+    width: 600px;
+    top: 50px;
+    right: 750px;
 }
