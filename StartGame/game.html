@@ -8,10 +8,9 @@
         <script defer src = "script.js"></script>
         <link href ="index.html">
     </head>
-    <body>
+    <body onload ="startGame();">
         
         <div class = "container">
-            <div id = "questions-container"></div> 
             <div id = "question">QUESTION</div>
             <div id = "answer-buttons" class ="button-grid">
                 <button class = "button">Answer 1</button>
@@ -20,7 +19,7 @@
                 <button class = "button">Answer 4</button>
             </div> 
             <div class = "player-controls">
-                <button id ="next-button" class = "next-button button hide">NEXT</button>
+                <button id ="next-button" class = "next-button">NEXT</button>
             </div>
         </div>
    
