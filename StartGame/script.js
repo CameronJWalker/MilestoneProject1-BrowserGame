@@ -41,81 +41,81 @@ const question = [
             {text: 'The Jedi', correct: false},
             {text: 'Jar Jar Binks', correct: false},
             {text: 'The Clone Troopers', correct: false},
-            {text: 'The Sith', correc: true}
+            {text: 'The Sith', correct: true}
         ]
 
     
+    },
+    {
+    question: "What is baby yodas real name?",
+        answers: [
+            {text: 'Yoda', correct: false},
+            {text: 'Grogu', correct: true},
+            {text: 'Palpatine', correct: false},
+            {text: 'Graga', correct: false}
+            
+        ]
+
+    
+    },
+    {
+        question: "Who is Palpatine's granddaughter?",
+            answers: [
+                {text: 'Rey', correct: true},
+                {text: 'Padme', correct: false},
+                {text: 'Leia', correct: false},
+                {text: 'Satine', correct: false}
+                
+            ]
+    
+        
+    },
+    {
+        question: "Who adopted Anakin and Padme's daughter?",
+            answers: [
+                {text: 'Bail Organa', correct: true},
+                {text: 'The Mandalorian', correct: false},
+                {text: 'Mace Windu', correct: false},
+                {text: 'Palpatine', correct: false}
+                
+            ]
+    
+        
+    }, 
+    {
+        question: "What color was Mace Windu's lightsaber?",
+            answers: [
+                {text: 'Green', correct: false},
+                {text: 'Blue', correct: false},
+                {text: 'Red', correct: false},
+                {text: 'Purple', correct: true}
+                
+            ]
+    
+        
+    },   
+    {
+        question: "What was Galen Erso's nickname for his daughter?",
+            answers: [
+                {text: 'Stardust', correct: true},
+                {text: 'Sunshine', correct: false},
+                {text: 'Hyperdrive', correct: false},
+                {text: 'Spaceway', correct: false}
+                
+            ]
+    
+        
+    },  
+    {
+        question: "Who does BB-8 belong to?",
+            answers: [
+                {text: 'Anakin Skywalker', correct: false},
+                {text: 'Poe Dameron', correct: true},
+                {text: 'Princess Leia', correct: false},
+                {text: 'Luke Skywalker', correct: false}
+                
+            ]
+    
+        
     }
-//     {
-//         question: "What is baby yodas real name?",
-//         answers: {
-//             a: 'Yoda',
-//             b: 'Gragah',
-//             c: 'Grogu',
-//             d: 'Palpatine'
-//         },
-
-//     correctAnswer: "c"
-    
-//     },
-//     {
-//         question: "Who is Palpatine's granddaughter?",
-//         answers: {
-//             a: 'Rey',
-//             b: 'Padme',
-//             c: 'Leia',
-//             d: 'Satine'
-//         },
-
-//     correctAnswer: "a"
-    
-//     },
-//     {
-//         question: "Who adopted Anakin and Padme's daughter?",
-//         answers: {
-//             a: 'Bail Organa',
-//             b: 'The Mandalorian',
-//             c: 'Mace Windu',
-//             d: 'Palpatine'
-//         },
-
-//     correctAnswer: "a"
-    
-//     },
-//     {
-//         question: "What color was Mace Windu's lightsaber?",
-//         answers: {
-//             a: 'Green',
-//             b: 'Blue',
-//             c: 'Red',
-//             d: 'Purple'
-//         },
-
-//     correctAnswer: "d"
-    
-//     },
-//     {
-//         question: "What was Galen Erso's nickname for his daughter?",
-//         answers: {
-//             a: 'Stardust',
-//             b: 'Sunshine',
-//             c: 'Hyperdrive',
-//             d: 'Daughter'
-//         },
-
-//     correctAnswer: "a"
-    
-//     },
-//     {
-//         question: "Who does BB-8 belong to?",
-//         answers: {
-//             a: 'Anakin Skywalker',
-//             b: 'Poe Dameron',
-//             c: 'Princess Leia',
-//             d: 'Luke Skywalker'
-//         },
-
-//     correctAnswer: "b"
-    
-//     },
 ]
