@@ -9,7 +9,7 @@ function startGame(){
     nextQuestion()
 }
 function nextQuestion() {
-    resetState()
+    resetGame()
     showQuestion(shuffledQuestions[currentQuestions])
 }
 function showQuestion(question){
@@ -25,15 +25,59 @@ function showQuestion(question){
         answerButtonsElement.appendChild(button)
     })
 }
-function resetState(){
-    nextButton.classList.add('hide')
+function resetGame(){
     while (answerButtonsElement.firstChild){
         answerButtonsElement.removeChild(answerButtonsElement.firstChild)
     }
 }
 function selectAnswer(e){
-
+    const selectButton = e.target
+    const correct = selectButton.dataset.correct
+    setStatus(document.body, correct)
+    Array.from(answerButtonsElement.children).forEach(button => {
+        setStatus(button, button.dataset.correct)
+    })
+    const showGreenLightSaber = () => {
+        document.getElementById("greenlightsaber").style.display ='block';
+    }
+    const showRedLightSaber = () =>{
+        document.getElementById("redlightsaber").style.display ='block';
+    }
+    function showLightSaber(){
+        if(correct){
+                showGreenLightSaber()
+         }else{
+                 showRedLightSaber()
+            }}
+    showLightSaber()
 }
+
+function setStatus(element, correct){
+    clearStatus(element)
+    if(correct){
+        element.classList.add('correct')
+    } else {
+        element.classList.add('wrong')
+    }
+//     const showGreenLightSaber = () => {
+//         document.getElementById("greenlightsaber").style.display ='block';
+//     }
+//     const showRedLightSaber = () =>{
+//         document.getElementById("redlightsaber").style.display ='block';
+//     }
+//     function showLightSaber(){
+//         if(correct){
+//                 showGreenLightSaber()
+//          }
+//                  showRedLightSaber()
+//             }
+//     showLightSaber()
+ }
+function clearStatus(element){
+    element.classList.remove('correct')
+    element.classList.remove('wrong')
+}
+
 const question = [
     {
         question: "Who wields the dark side and want to rule the galaxy?",

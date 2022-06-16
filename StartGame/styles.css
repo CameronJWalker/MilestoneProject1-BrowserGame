@@ -13,7 +13,7 @@ body {
     background-position: center center;
 }
 .container {
-    width: 1000px;
+    width: 900px;
     height: 175px;
     max-width: 80%;
     background-color: rgb(252, 251, 251);
@@ -21,7 +21,7 @@ body {
     padding: 10px;
     box-shadow: 10 0 100px;
     background-color: #F4E23A;
-    
+    position: absolute;
 }
 .button {
     background-color: #F4E23A;
@@ -39,7 +39,8 @@ body {
     width: 200px;
     margin: 0;
     position: absolute;
-    left: 45%;
+    right: 1%;
+    top: 4%;
 }
 .next-button:active{
     box-shadow: 0 1px black;
@@ -70,3 +71,29 @@ body {
     top: 50px;
     right: 750px;
 }
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.hide{
+    display: none;
+}
+ .button.correct {
+    background-color: rgb(4, 167, 4);
+  }
+  
+  .button.wrong {
+    background-color: red;
+  } 
+.imageContainer{ 
+    transform: rotate(90deg);
+    margin-top: 500px;
+    
+} 
+#greenlightsaber {
+    display: none;
+}
+#redlightsaber{
+    display:none;
+} 
