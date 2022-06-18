@@ -68,14 +68,22 @@ function selectAnswer(e){
                  showRedLightSaber()
             }}
     showLightSaber()
-    function scoreboard(){
+    // function to display score and increment it every time a correct answer is given
+    function scores(){
         if(correct){
-            score++
-            console.log('Your score is', score)
+            score ++
+            document.getElementById('scoreboard').innerHTML = "Score: " + score;
         }
     }
-    scoreboard()
+    scores()
+    function endGame(){
+        if(score == 10){
+            document.getElementById('scoreboard').innerHTML = "YOU WIN";
+        }
+    }
+    endGame()
 }
+
 // remove the lightsaber image so the next answer can be clicked
 function removeLightsaber(){
     document.getElementById('greenlightsaber').style.display="none";
