@@ -1,17 +1,30 @@
+// select the question element
 const questionElement = document.getElementById('question')
 const nextButton = document.getElementById('next-button')
+// select the answer buttons element
 const answerButtonsElement = document.getElementById('answer-buttons')
+//creates two new variables to be used later in a function
 let shuffledQuestions, currentQuestions
+//call the next button so when clicked it runs the two functions and sets the next question
+nextButton.addEventListener('click',() => {
+    currentQuestions++
+    nextQuestion()
+    removeLightsaber()
+})
+// when page is loaded this function will shuffle the questions and display the first question, starting the game
 function startGame(){
     console.log('GAME STARTED')
+    // randomises the questions
     shuffledQuestions = question.sort(()=>Math.random() - .5)
     currentQuestions = 0
     nextQuestion()
 }
+// when the next button is clicked it will reset the game state that way the new question and answer is displayed
 function nextQuestion() {
     resetGame()
     showQuestion(shuffledQuestions[currentQuestions])
 }
+// takes a question object from the question array and shows the question and given answers in the buttons
 function showQuestion(question){
     questionElement.innerText = question.question
     question.answers.forEach(answer => {
@@ -25,15 +38,18 @@ function showQuestion(question){
         answerButtonsElement.appendChild(button)
     })
 }
+// resets the state of the game so that the old answers are not left in the buttons 
 function resetGame(){
     while (answerButtonsElement.firstChild){
         answerButtonsElement.removeChild(answerButtonsElement.firstChild)
     }
 }
+// function for when an answer button is clicked it states correct or wrong
 function selectAnswer(e){
     const selectButton = e.target
     const correct = selectButton.dataset.correct
     setStatus(document.body, correct)
+    //returns a collection of the correct answers for each button 
     Array.from(answerButtonsElement.children).forEach(button => {
         setStatus(button, button.dataset.correct)
     })
@@ -43,6 +59,7 @@ function selectAnswer(e){
     const showRedLightSaber = () =>{
         document.getElementById("redlightsaber").style.display ='block';
     }
+    // function to show a green light saber for correct and a red light saber for wrong
     function showLightSaber(){
         if(correct){
                 showGreenLightSaber()
@@ -51,7 +68,12 @@ function selectAnswer(e){
             }}
     showLightSaber()
 }
-
+// remove the lightsaber image so the next answer can be clicked
+function removeLightsaber(){
+    document.getElementById('greenlightsaber').style.display="none";
+    document.getElementById('redlightsaber').style.display="none";
+ }
+//  if the button clicked is correct, it adds correct to the class list and vice versa
 function setStatus(element, correct){
     clearStatus(element)
     if(correct){
@@ -73,11 +95,12 @@ function setStatus(element, correct){
 //             }
 //     showLightSaber()
  }
+//  removes the classes 
 function clearStatus(element){
     element.classList.remove('correct')
     element.classList.remove('wrong')
 }
-
+// array of all the questions
 const question = [
     {
         question: "Who wields the dark side and want to rule the galaxy?",
