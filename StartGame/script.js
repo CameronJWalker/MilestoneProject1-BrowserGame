@@ -5,6 +5,7 @@ const nextButton = document.getElementById('next-button')
 const answerButtonsElement = document.getElementById('answer-buttons')
 //creates two new variables to be used later in a function
 let shuffledQuestions, currentQuestions
+let score = 0
 //call the next button so when clicked it runs the two functions and sets the next question
 nextButton.addEventListener('click',() => {
     currentQuestions++
@@ -67,6 +68,13 @@ function selectAnswer(e){
                  showRedLightSaber()
             }}
     showLightSaber()
+    function scoreboard(){
+        if(correct){
+            score++
+            console.log('Your score is', score)
+        }
+    }
+    scoreboard()
 }
 // remove the lightsaber image so the next answer can be clicked
 function removeLightsaber(){
@@ -100,6 +108,8 @@ function clearStatus(element){
     element.classList.remove('correct')
     element.classList.remove('wrong')
 }
+// create a function to display the score
+
 // array of all the questions
 const question = [
     {
@@ -184,5 +194,50 @@ const question = [
             ]
     
         
+    },
+    {
+        question: "Who is Lukes father?",
+            answers: [
+                {text: "Kit Phisto", correct:false},
+                {text: "Qui Gon Jinn", correct:false},
+                {text: "Palpatine", correct:false},
+                {text: "Darth Vader", correct:true}
+            ]
+    },
+    {
+        question: "When did the first Star Wars come out?",
+            answers: [
+                {text: "1978", correct:false},
+                {text: "1987", correct:false},
+                {text: "1977", correct:true},
+                {text: "1969", correct:false}
+            ]
+    },
+    {
+        question: "Who is the only non Jedi in the original Star Wars trilogy to use a lightsaber?",
+            answers: [
+                {text: "Chewbacca", correct:false},
+                {text: "Han Solo", correct:true},
+                {text: "R2-D2", correct:false},
+                {text: "Owen", correct:false}
+            ]
+    },
+    {
+        question: "How many languages can C-3PO speak?",
+            answers: [
+                {text: "6 thousand", correct:false},
+                {text: "6 million", correct:true},
+                {text: "6 billion", correct:false},
+                {text: "6 trillion", correct:false}
+            ]
+    },
+    {
+        question: "What is Count Dooku's Sith name?",
+            answers: [
+                {text: "Darth Tyranus", correct:true},
+                {text: "Darth Maul", correct:false},
+                {text: "Darth Revan", correct:false},
+                {text: "Darth Bane", correct:false}
+            ]
     }
 ]
