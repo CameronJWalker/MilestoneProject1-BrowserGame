@@ -247,5 +247,59 @@ const question = [
                 {text: "Darth Revan", correct:false},
                 {text: "Darth Bane", correct:false}
             ]
+    },
+    {
+        question: "Han Solo was frozen in what?",
+            answers: [
+                {text: "Stone", correct:false},
+                {text: "Bacta", correct:false},
+                {text: "Carbonite", correct:true},
+                {text: "Duracrete", correct:false}
+            ]
+    },
+    {
+        question: "Padme was Queen of what?",
+            answers: [
+                {text: "Alderaan", correct:false},
+                {text: "Naboo", correct:true},
+                {text: "Tatooine", correct:false},
+                {text: "Coruscant", correct:false}
+            ]
+    },
+    {
+        question: "In Rogue One, what is the Empire removing from the holy city on Jedha?",
+            answers: [
+                {text: "Force Sensitive Users", correct:false},
+                {text: "Jedi texts", correct:false},
+                {text: "Kyber Crystals", correct:true},
+                {text: "Tibanna Gas", correct:false}
+            ]
+    },
+    {
+        question: "In The Empire Strikes Back, which All Terrain Walker does the Empire use to capture the rebel base?",
+            answers: [
+                {text: "AT-ST", correct:false},
+                {text: "AT-TE", correct:false},
+                {text: "AT-AT", correct:true},
+                {text: "AT-HS", correct:false}
+            ]
+    },
+    {
+        question: "In The Force Awakens, what are Han and Chewie hauling on their freighter?",
+            answers: [
+                {text: "Rancors", correct:false},
+                {text: "Sarlaccs", correct:false},
+                {text: "Wampas", correct:false},
+                {text: "Rathtars", correct:true}
+            ]
+    },
+    {
+        question: "What was the name of the clone who ordered the shooting of Obi Wan Kenobi?",
+            answers: [
+                {text: "Commander Cody", correct:true},
+                {text: "Wolf", correct:false},
+                {text: "Captain Rex", correct:false},
+                {text: "Palpatine", correct:false}
+            ]
     }
 ]
